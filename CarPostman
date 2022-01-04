@@ -1,0 +1,512 @@
+{
+	"info": {
+		"_postman_id": "f7318d9c-2659-4cd4-843c-f6c620d8d16f",
+		"name": "car-details",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "vehicles",
+			"item": [
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/vehicles/?manufacturer_id[0]=5fa28e77-0226-38a3-a82a-7d60c05d6de3&manufacturer_id[1]=c650b486-70f4-385a-a343-c2f6b84c2da8&model_id[0]=c650b486-70f4-385a-a343-c2f6b84c2da8&model_id[1]=c650b486-70f4-385a-a343-c2f6b84c2da8&trim_level_id[0]=2758a7f3-8930-3fbe-8789-6a884d6b22e1&trim_level_id[1]=2758a7f3-8930-3fbe-8789-6a884d6b22e1&inner_color_id[0]=a078ea10-31a5-11ec-aca3-3946ce1ae96e&outer_color_id[0]=bc5cb6b0-34c4-11ec-8508-4be759899d13&transmission_id[0]=bc5cb6b0-34c4-11ec-8508-4be759899d13&transmission_id[1]=c4476d3b-1a76-3466-8453-5bb37a8c2c35&date[0]=1971&date[1]=1995&fromPrice=20000&toPrice=150000&fromMileage=10000&toMileage=500000&city_id[0]=25b9ff51-871f-3b61-a862-757d19a37b72&city_id[1]=25b9ff51-871f-3b61-a862-757d19a37b72&per_page=100&status=used",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vehicles",
+								""
+							],
+							"query": [
+								{
+									"key": "manufacturer_id[0]",
+									"value": "5fa28e77-0226-38a3-a82a-7d60c05d6de3"
+								},
+								{
+									"key": "manufacturer_id[1]",
+									"value": "c650b486-70f4-385a-a343-c2f6b84c2da8"
+								},
+								{
+									"key": "model_id[0]",
+									"value": "c650b486-70f4-385a-a343-c2f6b84c2da8"
+								},
+								{
+									"key": "model_id[1]",
+									"value": "c650b486-70f4-385a-a343-c2f6b84c2da8"
+								},
+								{
+									"key": "trim_level_id[0]",
+									"value": "2758a7f3-8930-3fbe-8789-6a884d6b22e1"
+								},
+								{
+									"key": "trim_level_id[1]",
+									"value": "2758a7f3-8930-3fbe-8789-6a884d6b22e1"
+								},
+								{
+									"key": "inner_color_id[0]",
+									"value": "a078ea10-31a5-11ec-aca3-3946ce1ae96e"
+								},
+								{
+									"key": "inner_color_id[1]",
+									"value": "a078ea10-31a5-11ec-aca3-3946ce1ae96e",
+									"disabled": true
+								},
+								{
+									"key": "outer_color_id[0]",
+									"value": "bc5cb6b0-34c4-11ec-8508-4be759899d13"
+								},
+								{
+									"key": "outer_color_id[1]",
+									"value": "bc5cb6b0-34c4-11ec-8508-4be759899d13",
+									"disabled": true
+								},
+								{
+									"key": "transmission_id[0]",
+									"value": "bc5cb6b0-34c4-11ec-8508-4be759899d13"
+								},
+								{
+									"key": "transmission_id[1]",
+									"value": "c4476d3b-1a76-3466-8453-5bb37a8c2c35"
+								},
+								{
+									"key": "date[0]",
+									"value": "1971"
+								},
+								{
+									"key": "date[1]",
+									"value": "1995"
+								},
+								{
+									"key": "fromPrice",
+									"value": "20000"
+								},
+								{
+									"key": "toPrice",
+									"value": "150000"
+								},
+								{
+									"key": "fromMileage",
+									"value": "10000"
+								},
+								{
+									"key": "toMileage",
+									"value": "500000"
+								},
+								{
+									"key": "city_id[0]",
+									"value": "25b9ff51-871f-3b61-a862-757d19a37b72"
+								},
+								{
+									"key": "city_id[1]",
+									"value": "25b9ff51-871f-3b61-a862-757d19a37b72"
+								},
+								{
+									"key": "per_page",
+									"value": "100"
+								},
+								{
+									"key": "status",
+									"value": "used"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/vehicles/0330a54d-12e5-3ef7-aead-77f2266736ab",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vehicles",
+								"0330a54d-12e5-3ef7-aead-77f2266736ab"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "brands",
+			"item": [
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/brands?search_text=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"brands"
+							],
+							"query": [
+								{
+									"key": "search_text",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "models",
+			"item": [
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/models?brand_id[1]=5ecc83f6-4ca1-327e-9ba7-2ca1161afa81",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"models"
+							],
+							"query": [
+								{
+									"key": "brand_id[1]",
+									"value": "5ecc83f6-4ca1-327e-9ba7-2ca1161afa81"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "categories",
+			"item": [
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/categories/?model_id[0]=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categories",
+								""
+							],
+							"query": [
+								{
+									"key": "model_id[0]",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "gear-shifters",
+			"item": [
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/gear-shifters",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"gear-shifters"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "colors",
+			"item": [
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/colors",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"colors"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "quick-search",
+			"item": [
+				{
+					"name": "index",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "locale",
+									"value": "ar",
+									"type": "text"
+								},
+								{
+									"key": "brand_id[0]",
+									"value": "2e99d914-0adf-3d43-943c-8390ebbd02ab",
+									"type": "text"
+								},
+								{
+									"key": "model_id[0]",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/quick-search?brand_id[0]=2e99d914-0adf-3d43-943c-8390ebbd02ab&model_id[0]=c8dc9da8-af89-3d20-b9c8-7ceb124cf200",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"quick-search"
+							],
+							"query": [
+								{
+									"key": "brand_id[0]",
+									"value": "2e99d914-0adf-3d43-943c-8390ebbd02ab"
+								},
+								{
+									"key": "model_id[0]",
+									"value": "c8dc9da8-af89-3d20-b9c8-7ceb124cf200"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "locale",
+									"value": "ar",
+									"type": "text"
+								},
+								{
+									"key": "brand_id[0]",
+									"value": "2e99d914-0adf-3d43-943c-8390ebbd02ab",
+									"type": "text"
+								},
+								{
+									"key": "model_id[0]",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/brands?brand_id[0]=2e99d914-0adf-3d43-943c-8390ebbd02ab&search_text=g",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"brands"
+							],
+							"query": [
+								{
+									"key": "brand_id[0]",
+									"value": "2e99d914-0adf-3d43-943c-8390ebbd02ab"
+								},
+								{
+									"key": "search_text",
+									"value": "g"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "contact-information",
+			"item": [
+				{
+					"name": "index",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "{{accept}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{url}}/contact-information?search_text=pr&list=true&local=ar",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"contact-information"
+							],
+							"query": [
+								{
+									"key": "search_text",
+									"value": "pr"
+								},
+								{
+									"key": "list",
+									"value": "true"
+								},
+								{
+									"key": "local",
+									"value": "ar"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/test?locale= en&order_id=2b2a0450-ae69-11eb-b2ab-1b806ab53926&charge_id=sk_test_J4Yi5pydEZKT6Ho03bVxqS7c\n",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"test"
+					],
+					"query": [
+						{
+							"key": "locale",
+							"value": " en"
+						},
+						{
+							"key": "order_id",
+							"value": "2b2a0450-ae69-11eb-b2ab-1b806ab53926"
+						},
+						{
+							"key": "charge_id",
+							"value": "sk_test_J4Yi5pydEZKT6Ho03bVxqS7c\n"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
